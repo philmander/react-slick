@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp server",
     "prepublish": "babel ./src --out-dir ./lib && gulp dist",
+    "build": "npm run prepublish",
     "test": "jest",
     "dev-test": "jest --watch",
     "lint": "eslint src"
